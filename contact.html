@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/app-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - TallyAnt</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-sans bg-bg-main text-text-primary antialiased overflow-x-hidden leading-relaxed"
+  >
+    <header
+      class="py-6 absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light"
+    >
+      <div
+        class="max-w-[1100px] mx-auto px-6 flex justify-between items-center"
+      >
+        <a
+          href="/"
+          class="text-2xl font-semibold text-text-primary flex items-center gap-3 tracking-tight"
+        >
+          <img
+            src="/app-icon.png"
+            alt="TallyAnt Logo"
+            class="w-8 h-8 rounded-md object-cover"
+          />
+          TallyAnt
+        </a>
+        <nav class="flex items-center gap-8">
+          <a
+            href="/"
+            class="text-text-secondary text-sm font-medium hover:text-accent-primary transition-all duration-300 hidden md:block"
+            >Home</a
+          >
+          <a
+            href="/contact.html"
+            class="text-text-secondary text-sm font-medium hover:text-accent-primary transition-all duration-300 hidden md:block"
+            >Contact</a
+          >
+          <a
+            href="/#download"
+            class="inline-block px-5 py-2 rounded-lg font-semibold cursor-pointer border-none text-sm transition-all duration-300 bg-accent-primary text-white shadow-glow hover:shadow-glow-hover hover:-translate-y-0.5"
+            >Download</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-[1100px] mx-auto px-6 pt-32">
+      <div class="py-[120px] pb-[60px] text-center">
+        <h1
+          class="text-6xl mb-6 tracking-tight text-text-primary font-semibold"
+        >
+          Contact Us
+        </h1>
+        <p class="text-text-secondary text-xl">
+          We'd love to hear from you. Send us a message below.
+        </p>
+      </div>
+
+      <div
+        class="bg-bg-card p-12 rounded-xl mb-16 border border-border-light shadow-sm"
+      >
+        <form class="max-w-2xl mx-auto flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <label for="name" class="text-text-primary text-sm font-medium"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="bg-white border border-gray-300 p-4 rounded-lg text-text-primary text-base transition-all duration-300 focus:outline-none focus:border-accent-primary focus:ring-4 focus:ring-[rgba(108,93,211,0.1)]"
+              placeholder="Your name"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-text-primary text-sm font-medium"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="bg-white border border-gray-300 p-4 rounded-lg text-text-primary text-base transition-all duration-300 focus:outline-none focus:border-accent-primary focus:ring-4 focus:ring-[rgba(108,93,211,0.1)]"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="subject" class="text-text-primary text-sm font-medium"
+              >Subject</label
+            >
+            <select
+              id="subject"
+              name="subject"
+              class="bg-white border border-gray-300 p-4 rounded-lg text-text-primary text-base transition-all duration-300 focus:outline-none focus:border-accent-primary focus:ring-4 focus:ring-[rgba(108,93,211,0.1)]"
+            >
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-text-primary text-sm font-medium"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="bg-white border border-gray-300 p-4 rounded-lg text-text-primary text-base transition-all duration-300 focus:outline-none focus:border-accent-primary focus:ring-4 focus:ring-[rgba(108,93,211,0.1)] min-h-[150px] resize-y"
+              placeholder="How can we help?"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-block px-5 py-2 rounded-lg font-semibold cursor-pointer border-none text-sm transition-all duration-300 bg-accent-primary text-white shadow-glow hover:shadow-glow-hover hover:-translate-y-0.5 mt-4"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="py-16 bg-bg-main border-t border-border-light text-text-primary text-center"
+    >
+      <div class="max-w-[1100px] mx-auto px-6">
+        <div class="flex justify-center gap-8 mb-8">
+          <a
+            href="/privacy.html"
+            class="text-text-secondary text-sm hover:text-accent-primary transition-all duration-300"
+            >Privacy Policy</a
+          >
+          <a
+            href="/terms.html"
+            class="text-text-secondary text-sm hover:text-accent-primary transition-all duration-300"
+            >Terms of Use</a
+          >
+          <a
+            href="/contact.html"
+            class="text-text-secondary text-sm hover:text-accent-primary transition-all duration-300"
+            >Contact</a
+          >
+        </div>
+        <p class="text-gray-500 text-xs">
+          &copy; 2026 TallyAnt. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

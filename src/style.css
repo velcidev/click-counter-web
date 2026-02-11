@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-accent-primary: #6c5dd3;
+  --color-accent-secondary: #bb86fc;
+  --color-bg-main: #ffffff;
+  --color-bg-alt: #f3f4f6;
+  --color-bg-card: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-border-light: rgba(0, 0, 0, 0.08);
+
+  --shadow-glow: 0 4px 15px rgba(108, 93, 211, 0.25);
+  --shadow-glow-hover: 0 8px 25px rgba(108, 93, 211, 0.25);
+}
+
+/* 
+  Tailwind v4 Setup:
+  - Theme variables are defined above.
+  - Utility classes will be used directly in HTML.
+*/
